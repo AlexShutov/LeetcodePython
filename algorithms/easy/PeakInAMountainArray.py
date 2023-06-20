@@ -22,6 +22,19 @@ class Solution:
 
         return -1
 
+    def peakIndexInMountainArray2(self, arr: List[int]) -> int:
+        return self.peakIndexInMountainArrayRecursive(0, len(arr) -1, arr)
+
+    def peakIndexInMountainArrayRecursive(self, left, right, arr: List[int]) -> int:
+        if left >= right:
+            return -1
+        middle = (left + right) // 2
+        if arr[middle -1] < arr[middle] > arr[middle + 1]:
+            return middle
+        if arr[middle -1] < arr[middle]:
+            return self.peakIndexInMountainArrayRecursive(middle, right, arr)
+        else:
+            return self.peakIndexInMountainArrayRecursive(left, middle, arr)
 
 
 # Press the green button in the gutter to run the script.
