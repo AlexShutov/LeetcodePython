@@ -9,12 +9,13 @@ class Solution:
         result = [[1], [1, 1]]
         if numRows < 3:
             return result[:numRows]
-        for _ in range(numRows -2):
+
+        for _ in range(2, numRows):
             newRow = [1]
             for i in range(1, len(result[-1])):
                 value = result[-1][i-1] + result[-1][i]
                 newRow.append(value)
-            newRow.append(1)
+            newRow.append([1])
             result.append(newRow)
         return result
 
