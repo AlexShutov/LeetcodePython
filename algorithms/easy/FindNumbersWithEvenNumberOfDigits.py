@@ -24,10 +24,10 @@ def getTestData():
         [555, 901, 482, 1771]
     ]
 
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     solution = Solution()
     for array in getTestData():
         numberOfEvenDigits = solution.findNumbers(array)
         print("In array " + str(array) + " numbers with even number of digits: " + str(numberOfEvenDigits))
-

@@ -4,7 +4,7 @@ from typing import List
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         left = 0
-        right = len(s) -1
+        right = len(s) - 1
         while left < right:
             s[left], s[right] = s[right], s[left]
             left += 1
@@ -17,6 +17,7 @@ def getTestData():
         ["H", "a", "n", "n", "a", "h"]
     ]
 
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     solution = Solution()
@@ -24,4 +25,3 @@ if __name__ == '__main__':
         reversed = list(string)
         solution.reverseString(reversed)
         print("Original string: " + str(string) + " reversed: " + str(reversed))
-

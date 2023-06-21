@@ -1,4 +1,3 @@
-
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         if x < 0:
@@ -17,4 +16,3 @@ if __name__ == '__main__':
     testValues = [121, -121, 10]
     for value in testValues:
         print(solution.isPalindrome(value))
-

@@ -18,14 +18,15 @@ class Solution:
 
         return max / k
 
+
 def getTestData():
-    case1 = [1,12,-5,-6,50,3]
+    case1 = [1, 12, -5, -6, 50, 3]
     value1 = 4
     case2 = [5]
     value2 = 1
-    case3 = [6,8,6,8,0,4,1,2,9,9]
+    case3 = [6, 8, 6, 8, 0, 4, 1, 2, 9, 9]
     value3 = 2
-    return [ (case1, value1), (case2, value2), (case3, value3)]
+    return [(case1, value1), (case2, value2), (case3, value3)]
 
 
 # Press the green button in the gutter to run the script.
@@ -36,6 +37,3 @@ if __name__ == '__main__':
         values, number = case
         average = solution.findMaxAverage(values, number)
         print("values" + str(values) + " average items: " + str(number) + " is " + str(average))
-
-
-

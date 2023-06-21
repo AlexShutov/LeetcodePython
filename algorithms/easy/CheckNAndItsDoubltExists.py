@@ -11,9 +11,10 @@ class Solution:
             history.add(number / 2)
         return False
 
+
 def getTestData():
-    case1 = [10,2,5,3]
-    case2 = [3,1,7,11]
+    case1 = [10, 2, 5, 3]
+    case2 = [3, 1, 7, 11]
     return [case1, case2]
 
 

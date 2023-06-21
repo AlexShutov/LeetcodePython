@@ -1,10 +1,9 @@
-from typing import List
-
 def getTestData():
     return [
         (5, 4),
         (1, 1)
     ]
+
 
 class Solution:
 
@@ -32,5 +31,5 @@ if __name__ == '__main__':
     solution = Solution()
     for versions, badVersion in getTestData():
         solution.badVersion = badVersion
-        print("For versions " + str(solution.versions) + " first bad version is: " + str(solution.firstBadVersion(versions)))
-
+        print("For versions " + str(solution.versions) + " first bad version is: " + str(
+            solution.firstBadVersion(versions)))

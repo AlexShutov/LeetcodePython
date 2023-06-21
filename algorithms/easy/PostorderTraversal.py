@@ -7,6 +7,8 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+
 class Solution:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         order = []
@@ -37,13 +39,10 @@ class Solution:
         return order
 
 
-
 def getTestData():
     return []
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     solution = Solution()
-
-
-

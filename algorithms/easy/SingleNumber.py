@@ -1,11 +1,13 @@
 from typing import List
 
+
 def getTestData():
     return [
         [2, 2, 1],
         [4, 1, 2, 1, 2],
         [1]
-        ]
+    ]
+
 
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
@@ -18,7 +20,6 @@ class Solution:
         return history.pop()
 
 
-
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     solution = Solution()
@@ -27,4 +28,3 @@ if __name__ == '__main__':
         number = solution.singleNumber(numbers)
 
         print("single number from " + str(numbers) + " is " + str(number))
-

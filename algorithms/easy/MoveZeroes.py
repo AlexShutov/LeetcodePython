@@ -11,8 +11,9 @@ class Solution:
             if nums[write] != 0:
                 write += 1
 
+
 def getTestData():
-    case1 = [0,1,0,3,12]
+    case1 = [0, 1, 0, 3, 12]
     case2 = [0]
     return [case1, case2]
 
@@ -26,5 +27,3 @@ if __name__ == '__main__':
         print("Initial values: " + str(case))
         solution.moveZeroes(case)
         print("values after moving zeroes: " + str(case))
-
-

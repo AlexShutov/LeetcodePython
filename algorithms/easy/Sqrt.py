@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
     def mySqrt(self, x: int) -> int:
         if x < 2:
@@ -24,10 +21,10 @@ class Solution:
 def getTestData():
     return [8, 4]
 
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     solution = Solution()
     for number in getTestData():
         root = solution.mySqrt(number)
         print("root from " + str(number) + " is: " + str(root))
-

@@ -1,5 +1,4 @@
 from collections import Counter
-from typing import List
 
 
 def getTestData():
@@ -35,6 +34,7 @@ class Solution:
 
     def isAnagramCounter(self, s: str, t: str) -> bool:
         return Counter(s) == Counter(t)
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

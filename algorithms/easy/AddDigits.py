@@ -14,13 +14,14 @@ class Solution:
 
 
 def getTestData():
-    nums1 = [2,7,11,15]
+    nums1 = [2, 7, 11, 15]
     target1 = 9
-    nums2 = [3,2,4]
+    nums2 = [3, 2, 4]
     target2 = 6
-    nums3 = [3,3]
+    nums3 = [3, 3]
     target3 = 6
     return [(nums1, target1), (nums2, target2), (nums3, target3)]
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -29,6 +30,3 @@ if __name__ == '__main__':
     for nums, target in getTestData():
         sumValues = solution.twoSum(nums, target)
         print("nums: " + str(nums) + " target: " + str(target) + " " + str(sumValues))
-
-
-

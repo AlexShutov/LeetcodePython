@@ -1,7 +1,9 @@
 from typing import List
 
+
 def getTestData():
     return [2, 5]
+
 
 class Solution:
 
@@ -17,12 +19,9 @@ class Solution:
         return result
 
 
-
-
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     solution = Solution()
 
     for value in getTestData():
         print(solution.countBits(value))
-

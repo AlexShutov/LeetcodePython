@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
 
     # def checkRecord(self, s: str) -> bool:
@@ -30,9 +27,9 @@ class Solution:
         return True
 
 
-
 def getTestData():
     return ["PPALLP", "PPALLL", "LALL"]
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -40,6 +37,3 @@ if __name__ == '__main__':
 
     for record in getTestData():
         print("record: " + str(record) + " is eligible? : " + str(solution.checkRecord(record)))
-
-
-

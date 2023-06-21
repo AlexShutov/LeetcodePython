@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         queue = list(s)
@@ -18,8 +15,9 @@ class Solution:
             j += 1
         return i == len(s)
 
+
 def getTestData():
-    return [("abc","ahbgdc"), ("axc", "ahbgdc")]
+    return [("abc", "ahbgdc"), ("axc", "ahbgdc")]
 
 
 # Press the green button in the gutter to run the script.
@@ -29,5 +27,3 @@ if __name__ == '__main__':
     for (s, t) in getTestData():
         isSubsequence = solution.isSubsequence(s, t)
         print("is " + s + " subsequence of " + t + " : " + str(isSubsequence))
-
-

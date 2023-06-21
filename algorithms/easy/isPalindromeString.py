@@ -1,4 +1,3 @@
-
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         left = 0
@@ -22,6 +21,7 @@ class Solution:
     def isCharacter(self, c: str) -> bool:
         return c.isalpha() or c.isnumeric()
 
+
 def getTestData():
     return [
         "0P",
@@ -30,10 +30,10 @@ def getTestData():
         " "
     ]
 
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     solution = Solution()
     for string in getTestData():
         isPalindrome = solution.isPalindrome(string)
         print("Is string: " + string + " is palindrome? " + str(isPalindrome))
-

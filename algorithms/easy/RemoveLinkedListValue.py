@@ -7,11 +7,13 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 def getTestCases():
-    case1 = [1,2,6,3,4,5,6]
+    case1 = [1, 2, 6, 3, 4, 5, 6]
     case2 = []
-    case3 = [7,7,7,7]
+    case3 = [7, 7, 7, 7]
     return [case1, case2, case3]
+
 
 def getLinkedList(numbers: [int]):
     dummy = ListNode(0, None)
@@ -21,6 +23,7 @@ def getLinkedList(numbers: [int]):
         head.next = current
         head = current
     return dummy.next
+
 
 def printLinkedList(head: ListNode):
     while head:
@@ -51,6 +54,6 @@ if __name__ == '__main__':
         print("Case #" + str(index + 1) + ": ")
         printLinkedList(list)
         value = valuesToRemove[index]
-        print("List after removing value " + str(value )+ ": ")
+        print("List after removing value " + str(value) + ": ")
         resultList = solution.removeElements(list, value)
         printLinkedList(resultList)

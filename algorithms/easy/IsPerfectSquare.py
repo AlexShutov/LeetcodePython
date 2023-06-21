@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
         l = 0
@@ -16,8 +13,9 @@ class Solution:
                 l = middle + 1
         return False
 
+
 def getTestData():
-    return [ 14, 16]
+    return [14, 16]
 
 
 # Press the green button in the gutter to run the script.
@@ -26,6 +24,3 @@ if __name__ == '__main__':
 
     for value in getTestData():
         print(solution.isPerfectSquare(value))
-
-
-

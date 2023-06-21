@@ -1,9 +1,10 @@
 from typing import List
 
+
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         l = 0
-        r = len(nums) -1
+        r = len(nums) - 1
         while l <= r:
             middle = (l + r) // 2
             if nums[middle] == target:
@@ -11,7 +12,7 @@ class Solution:
             if nums[middle] < target:
                 l = middle + 1
             else:
-                r = middle -1
+                r = middle - 1
         return -1
 
     def searchRecursive(self, nums: List[int], target: int) -> int:
@@ -23,21 +24,18 @@ class Solution:
             if nums[middle] == target:
                 return middle
             if nums[middle] > target:
-                right = middle -1
+                right = middle - 1
             else:
                 left = middle + 1
             return searchRecursive(left, right, target)
 
-        return searchRecursive(0, len(nums) -1, target)
-
-
-
+        return searchRecursive(0, len(nums) - 1, target)
 
 
 def getTestData():
-    array1 = [-1,0,3,5,9,12]
+    array1 = [-1, 0, 3, 5, 9, 12]
     target1 = 9
-    array2 = [-1,0,3,5,9,12]
+    array2 = [-1, 0, 3, 5, 9, 12]
     target2 = 2
     array3 = [5]
     target3 = 5

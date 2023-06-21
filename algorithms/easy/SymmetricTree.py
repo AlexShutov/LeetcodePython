@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import Optional
 
 
 # Definition for a binary tree node.
@@ -7,13 +7,17 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+
 class Solution:
     def isSymmetricRecursive(self, left: TreeNode, right: TreeNode):
         if not left and not right:
             return True
         if not left or not right:
             return False
-        return left.val == right.val and self.isSymmetricRecursive(left.left, right.right) and self.isSymmetricRecursive(left.right, right.left)
+        return left.val == right.val and self.isSymmetricRecursive(left.left,
+                                                                   right.right) and self.isSymmetricRecursive(
+            left.right, right.left)
 
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         if not root:
@@ -24,9 +28,7 @@ class Solution:
 def getTestData():
     return []
 
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     solution = Solution()
-
-
-

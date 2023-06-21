@@ -1,5 +1,3 @@
-from typing import List
-
 def getTestData():
     return [
         (2, 2),
@@ -7,6 +5,7 @@ def getTestData():
         (1, 1),
         (2, 1)
     ]
+
 
 # The guess API is already defined for you.
 # @param num, your guess
@@ -40,6 +39,7 @@ class Solution:
             else:
                 left = middle + 1
 
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     solution = Solution()
@@ -47,5 +47,5 @@ if __name__ == '__main__':
     for n, pick in getTestData():
         solution.pick = pick
         guess = solution.guessNumber(n)
-        print("picked value is: " + str(pick) + " max guessed number: " + str(n) + " and guessed number is: " + str(guess))
-
+        print("picked value is: " + str(pick) + " max guessed number: " + str(n) + " and guessed number is: " + str(
+            guess))

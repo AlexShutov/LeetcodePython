@@ -1,7 +1,9 @@
 from typing import List
 
+
 def getTestData():
     return [3, 0, 1]
+
 
 class Solution:
 
@@ -13,7 +15,7 @@ class Solution:
         for _ in range(2, numRows):
             newRow = [1]
             for i in range(1, len(result[-1])):
-                value = result[-1][i-1] + result[-1][i]
+                value = result[-1][i - 1] + result[-1][i]
                 newRow.append(value)
             newRow.append([1])
             result.append(newRow)
@@ -27,7 +29,7 @@ class Solution:
         for index in range(2, numRows):
             newRow = [1]
             for i in range(1, len(result[-1])):
-                value = result[-1][i-1] + result[-1][i]
+                value = result[-1][i - 1] + result[-1][i]
                 newRow.append(value)
             newRow.append(1)
             result.append(newRow)
@@ -43,5 +45,4 @@ if __name__ == '__main__':
     for nRow in getTestData():
         row = solution.getRow(nRow)
 
-        print(str(nRow)+ " row for Pascal triangle is: " + str(row))
-
+        print(str(nRow) + " row for Pascal triangle is: " + str(row))

@@ -1,9 +1,11 @@
 from typing import List
 
+
 def getTestData():
-    case1 = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
-    case2 = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"]
+    case1 = ["test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"]
+    case2 = ["a@leetcode.com", "b@leetcode.com", "c@leetcode.com"]
     return [case1, case2]
+
 
 class Solution:
 
@@ -23,4 +25,3 @@ if __name__ == '__main__':
 
     for value in getTestData():
         print(solution.numUniqueEmails(value))
-
