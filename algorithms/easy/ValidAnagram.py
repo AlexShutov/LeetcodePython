@@ -33,11 +33,13 @@ class Solution:
 
         return len(counts) == 0
 
+    def isAnagramCounter(self, s: str, t: str) -> bool:
+        return Counter(s) == Counter(t)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     solution = Solution()
 
     for s, t in getTestData():
-        isAnagram = solution.isAnagram(s, t)
+        isAnagram = solution.isAnagramCounter(s, t)
         print("is " + t + " a valid anagram of " + s + " : " + str(isAnagram))
